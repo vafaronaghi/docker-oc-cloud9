@@ -5,6 +5,7 @@ ENV APP_USER=cloud9 \
     APP_UID=2005 \
     APP_GROUP=cloud9 \
     APP_GID=2005 \
+    APP_HOME=/workspace
 
 COPY src /
 
