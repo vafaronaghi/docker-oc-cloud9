@@ -2,4 +2,4 @@
 
 chown -R ${APP_USER}:${APP_GROUP} ${APP_HOME}
 cd /cloud9
-gosu ${APP_USER}:${APP_GROUP} node /cloud9/server.js --listen 0.0.0.0 --port 80 -w ${APP_HOME}
+gosu ${APP_USER}:${APP_GROUP} node /cloud9/server.js --listen 0.0.0.0 --port 8000 -w ${APP_HOME}
