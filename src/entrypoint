@@ -1,5 +1,8 @@
 #!/bin/bash
 
 chown -R ${APP_USER}:${APP_GROUP} ${APP_HOME}
+cd ${APP_HOME}
+gosu ${APP_USER}:${APP_GROUP} /tmp/install/cloud9_ssh_install.sh
+
 cd /cloud9
 gosu ${APP_USER}:${APP_GROUP} node /cloud9/server.js --listen 0.0.0.0 --port 8000 -w ${APP_HOME}
